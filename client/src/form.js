@@ -6,11 +6,8 @@ const Form = props => {
     e.preventDefault();
     console.log('Enviando el formulario...');
     let newTask ={
-      _id: Math.round(Math.random() * 1000),
-      text: text,
-      done: false
-    }
-    console.log(newTask);
+      text: text
+    };
     addTask(newTask);
     setText('');
   };
